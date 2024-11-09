@@ -7,7 +7,7 @@ export default function GameBoard({ cards, onDragStart, onDragOver, onDrop }) {
       className="
         min-h-[400px] 
         p-8 
-        bg-orange-800 
+        bg-orange-500 
         rounded-xl 
         shadow-2xl 
         flex flex-wrap 
