@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function GameControls({ gameState, onShuffle, onSubmit }) {
+export default function GameControls({ gameState, onShuffle, onSubmit, onGoBack }) {
   return (
     <div className="mt-8 flex flex-col items-center gap-4">
       <div className="flex justify-center gap-4">
@@ -60,6 +60,35 @@ export default function GameControls({ gameState, onShuffle, onSubmit }) {
             "
           >
             Submit Sequence
+          </button>
+        )}
+        {gameState === 'finished' && (  // Changed from 'completed' to 'finished'
+          <button
+            onClick={onGoBack}
+            className="
+              px-8 
+              py-4 
+              bg-gradient-to-r 
+              from-blue-500 
+              to-blue-600 
+              text-white 
+              font-bold 
+              text-lg
+              rounded-lg 
+              shadow-lg
+              hover:from-blue-600 
+              hover:to-blue-700
+              transform 
+              hover:scale-105
+              transition-all 
+              duration-300
+              focus:outline-none 
+              focus:ring-2 
+              focus:ring-blue-500 
+              focus:ring-opacity-50
+            "
+          >
+            Play Again
           </button>
         )}
       </div>

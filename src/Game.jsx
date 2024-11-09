@@ -70,6 +70,16 @@ export function Game() {
     });
   };
 
+  const handleGoBack = () => {
+    // Reset the game state
+    setGameState('showing');
+    setCards([...originalSequence]); // Reset cards to original sequence
+    setScore(0);
+    setMoves(0);
+    setTimeElapsed(0);
+    setGameStartTime(null);
+  };
+
   const shuffleCards = () => {
     const shuffled = [...cards].sort(() => Math.random() - 0.5);
     setCards(shuffled);
@@ -154,6 +164,7 @@ export function Game() {
           gameState={gameState}
           onShuffle={shuffleCards}
           onSubmit={calculateScore}
+          onGoBack={handleGoBack}
           moves={moves}
         />
 
