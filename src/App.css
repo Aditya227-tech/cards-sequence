@@ -7,16 +7,11 @@
     @apply h-[50px] w-[50px] animate-loader-rotate;
   }
 
-  .loader:before,
-  .loader:after {
-    @apply block h-[20px] w-[20px] rounded-full content-[''];
-  }
-
   .loader:before {
     @apply bg-white animate-loader-ball1 mb-[10px];
   }
 
   .loader:after {
-    @apply bg-[#ff3d00] animate-loader-ball2;
+    @apply bg-orange-500 animate-loader-ball2;
   }
 }

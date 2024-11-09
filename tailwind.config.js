@@ -22,31 +22,31 @@ module.exports = {
         },
         ball1: {
           '0%': { 
-            boxShadow: '30px 0 0 #ff3d00',
+            boxShadow: '30px 0 0 theme(colors.orange.500)',
             marginBottom: '10px'
           },
           '50%': { 
-            boxShadow: '0 0 0 #ff3d00',
+            boxShadow: '0 0 0 theme(colors.orange.500)',
             marginBottom: '0',
             transform: 'translate(15px, 15px)'
           },
           '100%': { 
-            boxShadow: '30px 0 0 #ff3d00',
+            boxShadow: '30px 0 0 theme(colors.orange.500)',
             marginBottom: '10px'
           },
         },
         ball2: {
           '0%': { 
-            boxShadow: '30px 0 0 #fff',
+            boxShadow: '30px 0 0 theme(colors.white)',
             marginTop: '0'
           },
           '50%': { 
-            boxShadow: '0 0 0 #fff',
+            boxShadow: '0 0 0 theme(colors.white)',
             marginTop: '-20px',
             transform: 'translate(15px, 15px)'
           },
           '100%': { 
-            boxShadow: '30px 0 0 #fff',
+            boxShadow: '30px 0 0 theme(colors.white)',
             marginTop: '0'
           },
         }
