@@ -11,22 +11,22 @@ export default function GameControls({ gameState, onShuffle, onSubmit }) {
               px-8 
               py-4 
               bg-gradient-to-r 
-              from-green-500 
-              to-green-600 
+              from-orange-500 
+              to-orange-600 
               text-white 
               font-bold 
               text-lg
               rounded-lg 
               shadow-lg
-              hover:from-green-600 
-              hover:to-green-700
+              hover:from-orange-600 
+              hover:to-orange-700
               transform 
               hover:scale-105
               transition-all 
               duration-300
               focus:outline-none 
               focus:ring-2 
-              focus:ring-green-500 
+              focus:ring-orange-500 
               focus:ring-opacity-50
             "
           >
