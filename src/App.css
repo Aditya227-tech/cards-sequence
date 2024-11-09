@@ -1,22 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@layer components {
-  .loader {
-    @apply h-[50px] w-[50px] animate-loader-rotate;
-  }
-
-  .loader:before,
-  .loader:after {
-    @apply block h-[20px] w-[20px] rounded-full content-[''];
-  }
-
-  .loader:before {
-    @apply bg-white animate-loader-ball1 mb-[10px];
-  }
-
-  .loader:after {
-    @apply bg-loader-orange animate-loader-ball2;
-  }
-}

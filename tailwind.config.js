@@ -7,7 +7,42 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'loader-orange': '#FF6B00', // Brighter, more vibrant orange
+        primary: {
+          50: '#f0f9ff',
+          100: '#e0f2fe',
+          200: '#bae6fd',
+          300: '#7dd3fc',
+          400: '#38bdf8',
+          500: '#0ea5e9',
+          600: '#0284c7',
+          700: '#0369a1',
+          800: '#075985',
+          900: '#0c4a6e',
+        },
+        secondary: {
+          50: '#fdf4ff',
+          100: '#fae8ff',
+          200: '#f5d0fe',
+          300: '#f0abfc',
+          400: '#e879f9',
+          500: '#d946ef',
+          600: '#c026d3',
+          700: '#a21caf',
+          800: '#86198f',
+          900: '#701a75',
+        },
+        accent: {
+          50: '#fff7ed',
+          100: '#ffedd5',
+          200: '#fed7aa',
+          300: '#fdba74',
+          400: '#fb923c',
+          500: '#f97316',
+          600: '#ea580c',
+          700: '#c2410c',
+          800: '#9a3412',
+          900: '#7c2d12',
+        }
       },
       keyframes: {
         slideIn: {
@@ -17,49 +52,11 @@ module.exports = {
         'bounce-slight': {
           '0%, 100%': { transform: 'translateY(-2%)' },
           '50%': { transform: 'translateY(0)' },
-        },
-        rotate: {
-          '0%': { transform: 'rotate(0deg) scale(0.8)' },
-          '50%': { transform: 'rotate(360deg) scale(1.2)' },
-          '100%': { transform: 'rotate(720deg) scale(0.8)' },
-        },
-        ball1: {
-          '0%': { 
-            boxShadow: '30px 0 0 theme(colors.loader-orange)',
-            marginBottom: '10px'
-          },
-          '50%': { 
-            boxShadow: '0 0 0 theme(colors.loader-orange)',
-            marginBottom: '0',
-            transform: 'translate(15px, 15px)'
-          },
-          '100%': { 
-            boxShadow: '30px 0 0 theme(colors.loader-orange)',
-            marginBottom: '10px'
-          },
-        },
-        ball2: {
-          '0%': { 
-            boxShadow: '30px 0 0 theme(colors.white)',
-            marginTop: '0'
-          },
-          '50%': { 
-            boxShadow: '0 0 0 theme(colors.white)',
-            marginTop: '-20px',
-            transform: 'translate(15px, 15px)'
-          },
-          '100%': { 
-            boxShadow: '30px 0 0 theme(colors.white)',
-            marginTop: '0'
-          },
         }
       },
       animation: {
         slideIn: 'slideIn 0.5s ease-out forwards',
         'bounce-slight': 'bounce-slight 1s infinite',
-        'loader-rotate': 'rotate 1s infinite',
-        'loader-ball1': 'ball1 1s infinite',
-        'loader-ball2': 'ball2 1s infinite'
       },
     },
   },
