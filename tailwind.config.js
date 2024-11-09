@@ -6,6 +6,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        'loader-orange': '#FF6B00', // Brighter, more vibrant orange
+      },
       keyframes: {
         slideIn: {
           '0%': { transform: 'translateY(-20px)', opacity: 0 },
@@ -22,16 +25,16 @@ module.exports = {
         },
         ball1: {
           '0%': { 
-            boxShadow: '30px 0 0 theme(colors.orange.500)',
+            boxShadow: '30px 0 0 theme(colors.loader-orange)',
             marginBottom: '10px'
           },
           '50%': { 
-            boxShadow: '0 0 0 theme(colors.orange.500)',
+            boxShadow: '0 0 0 theme(colors.loader-orange)',
             marginBottom: '0',
             transform: 'translate(15px, 15px)'
           },
           '100%': { 
-            boxShadow: '30px 0 0 theme(colors.orange.500)',
+            boxShadow: '30px 0 0 theme(colors.loader-orange)',
             marginBottom: '10px'
           },
         },
