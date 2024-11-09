@@ -116,11 +116,11 @@ export function Game() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 p-8">
+    <div className="min-h-screen bg-gradient-to-b from-white to-gray-50 p-8">
       <div className="max-w-4xl mx-auto">
         <div className="mb-6 flex justify-between items-center">
           <div className="space-y-2">
-            <h1 className="text-4xl font-bold text-white">Card Sequence Memory Game</h1>
+            <h1 className="text-4xl font-bold text-black">Card Sequence Memory Game</h1>
             {gameState === 'playing' && (
               <div className="flex gap-4 text-gray-300">
                 <span>Time: {timeElapsed}s</span>
