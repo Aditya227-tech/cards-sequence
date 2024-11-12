@@ -1,12 +1,12 @@
 import './App.css'
 
 import React from 'react';
-import { Game } from './Game';
+import { Test12 } from './Test12';
 
 export default function App() {
   return (
     <div className="App">
-      <Game />
+      <Test12 />
     </div>
   );
 }

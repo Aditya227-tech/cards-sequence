@@ -252,7 +252,7 @@ function GameControls({ gameState, onShuffle, onSubmit, onGoBack }) {
 }
 
 // Main Game Component
-export function Game() {
+export function Test12() {
   const [cards, setCards] = useState([
     { id: 'AS', value: 'Ace of Spades' },
     { id: 'KH', value: 'King of Hearts' },
